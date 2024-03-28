@@ -14,11 +14,40 @@ body{
 
 .column{
     flex:1;
-    background-color: #ccc;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
 
-    border: 1px solid black;
+.column h2{
+    padding: 10px; /*интерактивный текст, кликать*/
+    color:aliceblue;
+
+    border-radius: 10px;
+
+    transition: background 0.3s ease-in-out;
+}
+
+.column h2:hover {
+    background: rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.column button{
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    color: aliceblue;
+
+    padding: 10px;
+    border-radius: 10px;
+
+    transition: background 0.3s ease-in-out;
+}
+
+.column button:hover{
+    background: rgba(0,0,0,0.1);
+    cursor: pointer;
 }
